@@ -1,13 +1,13 @@
 #navbar{
-    background-color: #e97171;
+    background-color: #810000 ;
     color: black;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     position: sticky;
     top:0;
     z-index: 10;
-    height: 50px;
+    height: 70px;
   }
   #navbar ul{
     display: flex;
@@ -21,6 +21,45 @@
   
   }
   #navbar li a:hover{
-    background-color: #810000;
+    background-color: #e97171; 
     border-radius: 20px;
   }
+
+  /*home styling*/
+#home{
+    background: url(../imgs/back.jpg)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+    text-shadow:2px 2px black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+  }
+  .homepage{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/*About styling*/
+#about {
+    background: #f5efef;
+
+}
+#about h1{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 80px;
+  }
+#about p{
+    text-align: center;
+}
