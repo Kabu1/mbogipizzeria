@@ -63,3 +63,8 @@
 #about p{
     text-align: center;
 }
+#about hr{
+    width: 80%;
+    border: 1px dashed black;
+    
+}
