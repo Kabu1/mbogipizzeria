@@ -1,0 +1,26 @@
+#navbar{
+    background-color: #e97171;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    height: 50px;
+  }
+  #navbar ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
+  #navbar li a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+  
+  }
+  #navbar li a:hover{
+    background-color: #810000;
+    border-radius: 20px;
+  }
