@@ -66,6 +66,46 @@ $(document).ready(function(){
             alert("Please select pizza size and crust");
           }
 
+          else{
+            $("button.proceed").hide();
+            $("#information").hide();
+            $(".selected").slideDown(1000);
+          }
+
+        total = price + crust_price + topping_price;
+        console.log(total);
+        let checkoutTotal =0;
+        checkoutTotal = checkoutTotal + total;
+
+        var newOrder = new buyPizza(pname, psize, pcrust,ptopping,total);
+
+        $("#ordersplaced").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
+        console.log(newOrder);
+    });
+
+     // Checkout button
+     $("button#checkout").click(function(){
+        $("button#checkout").hide();
+        $("button.more").hide();
+        $("button.delivery").slideDown(1000);
+        $("#addedprice").slideDown(1000);
+        console.log("Your total bills is ksh. "+checkoutTotal);
+        $("#pizzatotal").append("Your bill is ksh. "+checkoutTotal);
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
