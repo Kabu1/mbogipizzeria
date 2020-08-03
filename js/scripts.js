@@ -60,7 +60,7 @@ $(document).ready(function () {
         default:
             console.log("No price");
     }
-    let topping_value = ptopping.length*50;
+    let topping_value = ptopping.length*100;
     console.log("toppins value" + topping_value);
 
     if ((psize == "0") && (pcrust == "0")) {
@@ -140,7 +140,7 @@ $(document).ready(function () {
                 console.log("No price");
         }
 
-        let topping_value = ptopping.length*50;
+        let topping_value = ptopping.length*100;
         console.log("toppins value" + topping_value);
         total = price + crust_price + topping_value;
         console.log(total);
@@ -197,7 +197,7 @@ $("button#final-order").click(function (event) {
 
 
     if ($("input#fname").val() && $("input#pnumber").val() && $("input#location").val() != "") {
-        $("#finallmessage").append(person + ", your order has been successfully place, it will be delivered in the next 1 hour to " + location + ". Kindly make sure to avail. " + deliveryamount);
+        $("#finallmessage").append(person + ", your order has been successfully place, it will be delivered in the next 1 hour to " + location + ". Kindly make sure to avail kes: " + deliveryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
     }
