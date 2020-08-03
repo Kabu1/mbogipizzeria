@@ -29,12 +29,8 @@
                 <h1>PIZZA! PIZZA!</h1>
                 <h2>HERE TO MAKE YOU HAPPY!!</h2>
                 <button type="button" class="btn btn-info"><a href="#order"></a>ORDER</button>
-
-            </div>
-            
+            </div>  
         </div>
-        
-        
     </section>
     <section id="about">
         <h1>ABOUT US</h1>
@@ -125,19 +121,20 @@
                                 <option value="cheese">Cheese filled @ sh. 150</option>
                                 </select>
                             </div>
-                                <div class="form-group">
-                                <label for="select">Select Toppings</label>
-                                <select class="browser-default custom-select" id="thetopping"> 
-                                <option selected value="0">Select toppings here</option>
-                                <option value="mushroom">Mushroom@  sh. 50</option>
-                                <option value="bacon">Bacon @ sh. 50</option>
-                                <option value="chicken">chicken @ sh. 50</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Number of pizza</label>
-                                <input value="" placeholder="number of pizza" id="quantity"></input>
-                            </div>
+                            
+                            <label for="Toppings">Select Toppings each at sh. 50 </label><br>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="mushroom" value="mushroom" name="toppings">
+                                <label class="custom-control-label" for="mushroom">mushroom</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                                <label class="custom-control-label" for="Bacon">Bacon</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="chicken" value="chicken" name="toppings">
+                                <label class="custom-control-label" for="chicken">chicken</label>
+                                </div>
                             <button type="submit" class="btn btn-warning proceed">Proceed to checkout</button>
                         </form>
 
