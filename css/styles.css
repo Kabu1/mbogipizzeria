@@ -117,4 +117,25 @@
   font-weight: bold;
   font-size: 18px;
 }
-
+#response{
+  color: whitesmoke;
+}
+td,th{
+  font-size: 20px;
+  color: white;
+}
+.selected h2{
+  color:orange;
+  text-align: left;
+}
+#addedprice{
+  display: none;
+}
+#finallmessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 15px;
+  color: orange;
+}
