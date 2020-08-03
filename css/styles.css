@@ -8,6 +8,8 @@
     top:0;
     z-index: 10;
     height: 70px;
+    font-weight: bold;
+    font-size: 18px;
   }
   #navbar ul{
     display: flex;
@@ -50,15 +52,18 @@
     justify-content: center;
     align-items: center;
   }
+  
 /*About styling*/
 #about {
     background: #f5efef;
+    padding-bottom: 50px;
 
 }
 #about h1{
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
     padding-top: 80px;
+    color: black;
   }
 #about p{
     text-align: center;
@@ -74,6 +79,8 @@
 #meals{
   background: #e97171;
   color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #meals img{
   width: 400px;
@@ -96,6 +103,7 @@
 .feature-title{
   text-align: center;
   font-size: 18px;
+  padding-top: 10px;
 }
 #meals h2::after {
   content: '';
@@ -116,6 +124,8 @@
   color: rgb(158, 139, 139);
   font-weight: bold;
   font-size: 18px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 #response{
   color: whitesmoke;
@@ -143,19 +153,23 @@ td,th{
 
   background: darkgrey;
   color: black;
-  padding-top: 15px;
+  padding-top: 20px;
 
 }
 #footer h4{
   text-transform: uppercase;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 .line{
   border-width: 2px;
   background-color: orange;
 }
 .copyright{
-  text-align: center;
   color: black;
+  font-size: 15px;
+  text-align: center;
 }
 .copyright hr{
   background-color: rgb(20, 19, 17);
