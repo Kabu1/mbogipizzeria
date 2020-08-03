@@ -139,3 +139,29 @@ td,th{
   font-size: 15px;
   color: orange;
 }
+#footer{
+
+  background: darkgrey;
+  color: black;
+  padding-top: 15px;
+
+}
+#footer h4{
+  text-transform: uppercase;
+}
+.line{
+  border-width: 2px;
+  background-color: orange;
+}
+.copyright{
+  text-align: center;
+  color: black;
+}
+.copyright hr{
+  background-color: rgb(20, 19, 17);
+  height: 2px;
+  border: none;
+}
+.fa {
+  color: black;
+}
