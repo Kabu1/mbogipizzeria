@@ -91,11 +91,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="Phone">Phone Number</label>
-                                <input type="text" name="" id="Phonenumber" placeholder="phonenumber"> 
+                                <input type="text" name="" id="pnumber" placeholder="phonenumber"> 
                             </div>
                             <div class="form-group">
                                 <label for="select">Select Your Flavor</label>
-                                <select class="browser-default custom-select">
+                                <select class="browser-default custom-select" id="theflavor">
                                     <option selected value="0">Select size here</option>
                                     <option value="bbqchicken">BBQ Chicken</option>
                                     <option value="cheese">Cheese Pizza</option>
@@ -107,9 +107,9 @@
                             </div> 
                             <div class="form-group">
                                 <label for="select">Select Size</label>
-                                <select class="browser-default custom-select">
+                                <select class="browser-default custom-select" id="thesize">
                                 <option selected value="0">Select size here</option>
-                                <option value="large">Extralarge @ sh. 1500</option>
+                                <option value="extralarge">Extralarge @ sh. 1500</option>
                                 <option value="large">Large @ sh. 1100</option>
                                 <option value="medium">Medium @ sh. 900</option>
                                 <option value="small">Small @ sh. 500</option>
@@ -117,7 +117,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="select">Select Crust</label>
-                                <select class="browser-default custom-select">
+                                <select class="browser-default custom-select" id="thecrust">
                                 <option selected value="0">Select crust here</option>
                                 <option value="thick">Thick @ sh. 150</option>
                                 <option value="thin">Thin @ sh. 150</option>
@@ -127,7 +127,7 @@
                             </div>
                                 <div class="form-group">
                                 <label for="select">Select Toppings</label>
-                                <select class="browser-default custom-select">
+                                <select class="browser-default custom-select" id="thetopping"> 
                                 <option selected value="0">Select toppings here</option>
                                 <option value="mushroom">Mushroom@  sh. 50</option>
                                 <option value="bacon">Bacon @ sh. 50</option>
@@ -136,16 +136,18 @@
                             </div>
                             <div class="form-group">
                                 <label>Number of pizza</label>
-                                <input value="" required placeholder="number of pizza" id="quantity"></input>
+                                <input value="" placeholder="number of pizza" id="quantity"></input>
                             </div>
                             <button type="submit" class="btn btn-warning proceed">Proceed to checkout</button>
                         </form>
 
                     </div>
                     <div class="col-md-7">
-                        <p id="response">Your Order will be processed shortly. Regards</p>
+                        <div class="information">
+                            <p id="response">Your Order will be processed shortly. Regards</p>
+                        </div>
                         <div class="selected">
-                            <h2>Below Your Selection:</h2>
+                            <h2>Below Is Your Selection:</h2>
                             <div id="orders-selected">
                                 <table class="table table-sm">
                                     <thead class="thead-light">
@@ -189,6 +191,9 @@
             </div>
         </div>
 
+    </section>
+    <section id="footer">
+        
     </section>
 </body>
 </html>
