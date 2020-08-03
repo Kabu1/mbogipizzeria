@@ -70,3 +70,39 @@
 }
 
 
+/*meals section styling*/
+#meals{
+  background: #e97171;
+  color: black;
+}
+#meals img{
+  width: 400px;
+  height: 300px;
+}
+#meals h1{
+  text-align: center;
+  font-size: 32px;
+}
+#meals h1::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+  padding: 2px;
+}
+
+.feature-title{
+  text-align: center;
+  font-size: 18px;
+}
+#meals h2::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+  padding: 2px;
+}
