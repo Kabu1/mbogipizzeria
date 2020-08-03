@@ -82,53 +82,102 @@
         <div class="container-fluid">
             <div class="overlay">
                 <h2>ORDER NOW</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <form action="" id="orderform">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" name="Fname" id="Fname" placeholder="full name">
-                        </div>
-                        <div class="form-group">
-                            <label for="Phone">Phone Number</label>
-                            <input type="text" name="" id="Phonenumber" placeholder="phonenumber"> 
-                        </div>
-                        <div class="form-group">
-                            <label for="select">Select Your Flavor</label>
-                            <select class="browser-default custom-select">
+                <div class="row">
+                    <div class="col-md-5">
+                        <form action="" id="orderform">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" name="Fname" id="Fname" placeholder="full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone">Phone Number</label>
+                                <input type="text" name="" id="Phonenumber" placeholder="phonenumber"> 
+                            </div>
+                            <div class="form-group">
+                                <label for="select">Select Your Flavor</label>
+                                <select class="browser-default custom-select">
+                                    <option selected value="0">Select size here</option>
+                                    <option value="bbqchicken">BBQ Chicken</option>
+                                    <option value="cheese">Cheese Pizza</option>
+                                    <option value="Hawaii">Hawaii Pizza</option>
+                                    <option value="meat">Meat Pizza</option>
+                                    <option value="Peperoni">Peperoni Pizza</option>
+                                    <option value="Chicken">Chicken Tikka</option>
+                                </select>
+                            </div> 
+                            <div class="form-group">
+                                <label for="select">Select Size</label>
+                                <select class="browser-default custom-select">
                                 <option selected value="0">Select size here</option>
-                                <option value="bbqchicken">BBQ Chicken</option>
-                                <option value="cheese">Cheese Pizza</option>
-                                <option value="Hawaii">Hawaii Pizza</option>
-                                <option value="meat">Meat Pizza</option>
-                                <option value="Peperoni">Peperoni Pizza</option>
-                                <option value="Chicken">Chicken Tikka</option>
-                            </select>
-                        </div> 
-                        <div class="form-group">
-                            <label for="select">Select Size</label>
-                            <select class="browser-default custom-select">
-                            <option selected value="0">Select size here</option>
-                            <option value="large">Extralarge @ sh. 1500</option>
-                            <option value="large">Large @ sh. 1100</option>
-                            <option value="medium">Medium @ sh. 900</option>
-                            <option value="small">Small @ sh. 500</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="select">Select Crust</label>
-                            <select class="browser-default custom-select">
-                            <option selected value="0">Select crust here</option>
-                            <option value="thick">Thick @ sh. 150</option>
-                            <option value="thin">Thin @ sh. 150</option>
-                            <option value="stuffed">Stuffed @ sh. 100</option>
-                            <option value="cheese">Cheese filled @ sh. 150</option>
-                            </select>
-                        </div>
+                                <option value="large">Extralarge @ sh. 1500</option>
+                                <option value="large">Large @ sh. 1100</option>
+                                <option value="medium">Medium @ sh. 900</option>
+                                <option value="small">Small @ sh. 500</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="select">Select Crust</label>
+                                <select class="browser-default custom-select">
+                                <option selected value="0">Select crust here</option>
+                                <option value="thick">Thick @ sh. 150</option>
+                                <option value="thin">Thin @ sh. 150</option>
+                                <option value="stuffed">Stuffed @ sh. 100</option>
+                                <option value="cheese">Cheese filled @ sh. 150</option>
+                                </select>
+                            </div>
+                                <div class="form-group">
+                                <label for="select">Select Toppings</label>
+                                <select class="browser-default custom-select">
+                                <option selected value="0">Select toppings here</option>
+                                <option value="mushroom">Mushroom@  sh. 50</option>
+                                <option value="bacon">Bacon @ sh. 50</option>
+                                <option value="chicken">chicken @ sh. 50</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Number of pizza</label>
+                                <input value="" required placeholder="number of pizza" id="quantity"></input>
+                            </div>
+                            <button type="submit" class="btn btn-warning proceed">Proceed to checkout</button>
+                        </form>
 
-                    </form>
+                    </div>
+                    <div class="col-md-7">
+                        <p id="response">Your Order will be processed shortly. Regards</p>
+                        <div class="selected">
+                            <h2>Below Your Selection:</h2>
+                            <div id="orders-selected">
+                                <table class="table table-sm">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Flavor</th>
+                                            <th scope="col">Size</th>
+                                            <th scope="col">Crust</th>
+                                            <th scope="col">Topping</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ordersplaced">
+                                        <tr>
+                                          <td id="pizzaname"></td>
+                                          <td id="pizzasize"></td>
+                                          <td id="pizzacrust"></td>
+                                          <td id="pizzatopping"></td>
+                                          <td id="totals"></td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                                    <p id="pizzatotal"></p>
+                                    <p id="totalbill"></p>
+                                    <p id="addedprice">Delivery will be ksh. 150</p>
+                                    <p id="finallmessage"></p>
+                            </div>
+                            <button class="btn btn-primary" id="more">More Pizza</button>
+                            <button class="btn btn-success" id="checkout">Checkout</button>
+                            <button class="btn btn-warning" id="delivery">Home delivery</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
