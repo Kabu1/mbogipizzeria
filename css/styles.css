@@ -106,3 +106,15 @@
   margin: 15px auto 45px;
   padding: 2px;
 }
+
+#order{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../imgs/fom.jpg)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: rgb(158, 139, 139);
+  font-weight: bold;
+  font-size: 18px;
+}
+
