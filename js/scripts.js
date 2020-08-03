@@ -9,16 +9,12 @@ function buyPizza(flavor,size,crust,topping,total){
 }
 
 $(document).ready(function(){
-    $("button.process").click(function(event){
+    $("button.proceed").click(function(event){
         let pflavor = $(".flavor option:selected").val();
         let psize = $("#size option:selected").val();
         let pcrust = $("#crust option:selected").val();
         let ptopping = $("#topping option:selected").val();
     })
-
-
-
-
 
     switch(psize){
         case "0":
@@ -61,5 +57,16 @@ $(document).ready(function(){
           default:
             console.log("No price");
         }
+
+        if((psize == "0") && (pcrust == "0")){
+            console.log("nothing selected");
+            $("button.proceed").show();
+            $("#information").show();
+            $(".selected").hide();
+            alert("Please select pizza size and crust");
+          }
+
+
+
 });
 
