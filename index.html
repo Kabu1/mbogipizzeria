@@ -80,17 +80,55 @@
 
     <section id="order">
         <div class="container-fluid">
-            <h2>ORDER NOW</h2>
+            <div class="overlay">
+                <h2>ORDER NOW</h2>
             <div class="row">
                 <div class="col-md-6">
                     <form action="" id="orderform">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="Fname" id="Fname" placeholder="full name">
-                        <label for="Phone">Phone Number</label>
-                        <input type="text" name="" id="Phonenumber" placeholder="phonenumber">  
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="Fname" id="Fname" placeholder="full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone">Phone Number</label>
+                            <input type="text" name="" id="Phonenumber" placeholder="phonenumber"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="select">Select Your Flavor</label>
+                            <select class="browser-default custom-select">
+                                <option selected value="0">Select size here</option>
+                                <option value="bbqchicken">BBQ Chicken</option>
+                                <option value="cheese">Cheese Pizza</option>
+                                <option value="Hawaii">Hawaii Pizza</option>
+                                <option value="meat">Meat Pizza</option>
+                                <option value="Peperoni">Peperoni Pizza</option>
+                                <option value="Chicken">Chicken Tikka</option>
+                            </select>
+                        </div> 
+                        <div class="form-group">
+                            <label for="select">Select Size</label>
+                            <select class="browser-default custom-select">
+                            <option selected value="0">Select size here</option>
+                            <option value="large">Extralarge @ sh. 1500</option>
+                            <option value="large">Large @ sh. 1100</option>
+                            <option value="medium">Medium @ sh. 900</option>
+                            <option value="small">Small @ sh. 500</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select">Select Crust</label>
+                            <select class="browser-default custom-select">
+                            <option selected value="0">Select crust here</option>
+                            <option value="thick">Thick @ sh. 150</option>
+                            <option value="thin">Thin @ sh. 150</option>
+                            <option value="stuffed">Stuffed @ sh. 100</option>
+                            <option value="cheese">Cheese filled @ sh. 150</option>
+                            </select>
+                        </div>
 
                     </form>
                 </div>
+            </div>
             </div>
         </div>
 
